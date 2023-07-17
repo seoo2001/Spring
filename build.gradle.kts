@@ -19,8 +19,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
     implementation("org.projectlombok:lombok:1.18.26")
-//    implementation("io.springfox:springfox-boot-starter:3.0.0")
-//    implementation("io.springfox:springfox-swagger-ui:3.0.0")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
