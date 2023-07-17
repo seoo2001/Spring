@@ -1,5 +1,8 @@
 package practice.todo.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import practice.todo.domain.MemberDTO;
 
@@ -40,5 +43,21 @@ public class TestController {
     public String GetRequestParam3(MemberDTO memberDTO) {
         return memberDTO.toString();
     }
+
+    @PutMapping("/put-test-string")
+    public String putMethod1(@RequestBody MemberDTO memberDTO) {
+        return memberDTO.toString();
+    }
+
+    @PutMapping("/put-test-dto")
+    public MemberDTO putMethod2(@RequestBody MemberDTO memberDTO) {
+        return memberDTO;
+    }
+
+    @PutMapping("/put-test-response-entity")
+    public ResponseEntity<MemberDTO> putMethod3(@RequestBody MemberDTO memberDTO) {
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(memberDTO);
+    }
+
 
 }
