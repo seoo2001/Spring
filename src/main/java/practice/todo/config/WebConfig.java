@@ -1,3 +1,6 @@
+// vue build 후 vue-router 작동 안하는 오류 해결
+// 스프링 부트 위에서 SPA 프레임워크의 라우터 기능을 사용하기 위함.
+
 package practice.todo.config;
 
 import org.springframework.context.annotation.Configuration;
