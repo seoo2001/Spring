@@ -42,4 +42,4 @@ out/
 
 
 ### private ###
-*.properties
+src/main/resources/application.properties
